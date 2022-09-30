@@ -20,7 +20,7 @@ nav{
     top: 0;
     height: fit-content;
     /* height: 500px; */
-    overflow: hidden;
+    overflow-x: hidden;
 /* overflow-y: scroll; */
     padding: 0 10px;
     box-sizing: border-box;
@@ -36,7 +36,7 @@ nav > p{
 }
 
 nav ul{
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     transition: 00.25s ease-in-out;
     display: flex;
@@ -131,7 +131,7 @@ nav li{
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     nav{
         /* width: 100vw; */
         overflow-y: clip;
@@ -146,8 +146,8 @@ nav li{
         height: 100vh;
     }
     nav ul{
-        font-size: 20px;
-        height: 100%;
+        font-size: 30px;
+        height: 100vh;
         background-color: #8ee4af;
         padding-top: 30px;
         display: flex;
