@@ -12,9 +12,15 @@ body{
     background-color: #5cdb95;
 }
 nav{
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    /* height: 500px; */
+    overflow: hidden;
+/* overflow-y: scroll; */
     padding: 0 10px;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -26,9 +32,11 @@ nav > p{
 }
 
 nav ul{
+    font-size: 20px;
+    display: block;
     transition: 00.25s ease-in-out;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 nav li{
@@ -119,18 +127,29 @@ nav li{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+    nav{
+        /* width: 100vw; */
+        overflow-y: clip;
+    }
     #hamburger{
     position: relative;
     opacity: 1;
     display: block;
     }
+
+    nav.open{
+        height: 100vh;
+    }
     nav ul{
+        font-size: 20px;
+        height: 100%;
         background-color: #8ee4af;
         padding-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5%;
         width: 100%;
         position: absolute;
         right: -200%;
