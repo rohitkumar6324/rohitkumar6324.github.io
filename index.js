@@ -1,25 +1,24 @@
 //  navbar && hamburger
 
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("navbar");
-
-const toggleHam = function(){
-    ham.classList.toggle("open");
-    document.getElementById("navlist").classList.toggle("open");
-    if(nav.classList.contains("open")){
-        setTimeout(() => {
-            nav.classList.toggle("open");
-        },250);
+const ham = document.querySelector("#hamburger");
+const navlist = document.querySelector("nav > ul");
+const toggleHam = () => {
+    ham.classList.toggle("on");
+    if(ham.classList.contains("on")){
+        navlist.classList.toggle("on");
+       
     }
     else{
-        nav.classList.toggle("open");
+        navlist.classList.toggle("close");
+        setTimeout(() => {
+            navlist.classList.remove("close");
+            navlist.classList.toggle("on");
+        }, 250);
+
     }
-   
-    
 }
-
-ham.addEventListener("click",toggleHam);
-
-[...document.getElementsByClassName("navlist-unit")].forEach(e => e.addEventListener("click",toggleHam));
-
-
+ham.addEventListener("click",toggleHam)
+const myvar = Array.from(document.querySelectorAll("nav > ul > li"));
+myvar.forEach(element => {
+    element.addEventListener("click",toggleHam); 
+});

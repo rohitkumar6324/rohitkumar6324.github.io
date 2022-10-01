@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-
 <body>
     <nav id="navbar">
         <p>
-            <span style="color: #05386b;">Ro</span>
-            <span style="color: #5adec4;">hit</span>
+            Rohit
         </p>
+
         <div id="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <ul id="navlist">
-            <li class="navlist-unit">Home</li>
-            <li class="navlist-unit">About Us</li>
-            <li class="navlist-unit">Contact</li>
-            <li class="navlist-unit">Media</li>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="./util/Rohit Kumar Resume (1).pdf" download>Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
-    <div style="width: 100%; height:1000px; background-color: red;"></div>
+    <section id="home">
+        <div id="introduction">
+            <div id="intro-lines">
+                <p>Hi! I am</p>
+                <p style="color: rgb(255, 174, 0)">Rohit Kumar</p>
+            </div>
+            
+            <p>I am Java Backend Developer</p>
+            <button><a href="./util/Rohit Kumar Resume (1).pdf" download>Resume</a></button>
+        </div>
+
+        <div id="profile">
+            <img src="./images/bg.png" alt="" id="profile-bg">
+            <img src="./images/yoprofile2 (1).png" alt="" id="pfp">
+        </div>
+    </section>
 </body>
-<script src="index.js"></script>
+<script src="./index.js"></script>
 </html>
