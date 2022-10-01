@@ -1,21 +1,25 @@
+//  navbar && hamburger
+
+const ham = document.getElementById("hamburger");
+const nav = document.getElementById("navbar");
+
 const toggleHam = function(){
-    document.getElementById("hamburger").classList.toggle("open");
+    ham.classList.toggle("open");
     document.getElementById("navlist").classList.toggle("open");
-    if(document.getElementById("navbar").classList.contains("open")){
+    if(nav.classList.contains("open")){
         setTimeout(() => {
-            document.getElementById("navbar").classList.toggle("open");
+            nav.classList.toggle("open");
         },250);
     }
     else{
-        document.getElementById("navbar").classList.toggle("open");
+        nav.classList.toggle("open");
     }
    
     
 }
 
-document.getElementById("hamburger").addEventListener("click",toggleHam);
+ham.addEventListener("click",toggleHam);
 
-let x = [...document.getElementsByClassName("navlist-unit")]
-x.forEach(e => e.addEventListener("click",toggleHam))
+[...document.getElementsByClassName("navlist-unit")].forEach(e => e.addEventListener("click",toggleHam));
 
 
