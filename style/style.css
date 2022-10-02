@@ -114,6 +114,7 @@ nav > ul > li:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 section{
@@ -287,9 +288,7 @@ section{
         font-size: 45px;
         gap: 15px;
     }
-}
 
-@media screen and (max-width: 700px) {
     #profile{
         width: 80%;
     }
@@ -298,6 +297,8 @@ section{
     body{
         padding: 2px;
     }
+
+    
 }
 
 @media screen and (max-width: 525px) {
