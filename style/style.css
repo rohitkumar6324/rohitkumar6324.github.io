@@ -114,7 +114,6 @@ nav > ul > li:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
 }
 
 section{
@@ -280,6 +279,16 @@ section{
     #introduction > button {
         align-self: center;
     }
+
+    #introduction{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #introduction{
+        width: 90%;
+    }
 }
 
 
@@ -294,9 +303,7 @@ section{
     }
 }
 @media screen and (max-width: 600px) {
-    body{
-        padding: 2px;
-    }
+   
 
     
 }
